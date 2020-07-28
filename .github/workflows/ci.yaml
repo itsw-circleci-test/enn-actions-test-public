@@ -17,7 +17,7 @@ jobs:
  
     - name: Sample
       id: documents
-      uses: itsw-circleci-test/enn-actions-test@master
+      uses: itsw-circleci-test/enn-actions-test-public@master
       with:
         shellcommand: 'date' 
 
