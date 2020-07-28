@@ -1,0 +1,16 @@
+# action.yml
+name: 'Build Docker Action'
+branding:
+  color: 'white'
+description: 'Build action'
+inputs:
+    shellcommand:
+        description: 'Build command'
+        required: true
+        default: 'date'
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.shellcommand }}
